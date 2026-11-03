@@ -1,0 +1,49 @@
+THE BEST EXPERIENCE 2026 - COMO PUBLICAR O CONVITE
+===================================================
+
+O que e isto
+------------
+Um site estatico (HTML + CSS + JavaScript + imagens).
+Nao precisa de build, banco de dados, Node, PHP ou servidor especial.
+
+Conteudo do zip
+---------------
+index.html   -> a pagina do convite (precisa ficar na RAIZ do dominio)
+css/         -> estilos
+js/          -> interacoes (botoes, cronograma, contagem regressiva)
+assets/      -> imagens
+
+Passo a passo
+-------------
+1. Descompacte o zip.
+2. Envie TODO o conteudo da pasta (index.html, css, js, assets) para a
+   pasta publica da hospedagem do dominio The Best
+   (ex.: public_html, www, htdocs, ou o "publish directory" do Netlify,
+   Vercel, Cloudflare Pages, GitHub Pages, S3 + CloudFront etc.).
+   Mantenha a estrutura de pastas exatamente como esta.
+3. Aponte o dominio (ou subdominio, ex.: experience.thebest...) para essa
+   hospedagem no DNS.
+4. Ative HTTPS (certificado SSL). O link do WhatsApp e o Google Fonts
+   funcionam melhor com HTTPS.
+5. Abra o endereco no celular e no computador e confira:
+   - a abertura com as lentes e o botao de entrar
+   - botao "Confira o que o seu ingresso inclui"
+   - palestrantes (clicar troca a descricao)
+   - cronograma (botoes Dia 01 / Dia 02)
+   - contagem regressiva
+   - botoes "Garantir minha participacao", "Adicionar ao calendario" e "Ver rota"
+
+Ajustes comuns (editar o index.html)
+------------------------------------
+- Link/numero de WhatsApp do botao "Garantir minha participacao":
+  procure por "wa.me" e troque o numero.
+- Textos: edite direto no index.html.
+- Se substituir uma imagem, mantenha o mesmo nome do arquivo em assets/.
+
+Observacoes
+-----------
+- Precisa de internet para carregar a fonte Montserrat (Google Fonts).
+- Se o convite ficar numa subpasta (ex.: dominio.com/experience/), tudo
+  continua funcionando, pois os caminhos sao relativos.
+- Dica de performance: ative compressao gzip/brotli e cache de imagens no
+  servidor (opcional).
